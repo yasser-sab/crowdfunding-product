@@ -1,0 +1,51 @@
+button {
+	/*font-size: .5em;*/
+	/*font-weight: var(--fw-m);*/
+	/*font-size: var(--font-size-button);*/
+}
+
+.button {
+	border-radius: 50px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+	
+}
+
+.button--default {
+	padding:22px 46px;
+	background-color: var(--moderatecyan);
+	color: var(--white);
+}
+
+.button--book {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.button--book::before {
+	content: "";
+	width: 62px;
+	height: 62px;
+	background:url('../../../images/icon-bookmark.svg') no-repeat center / cover;
+	border-radius: inherit;
+
+}
+
+
+@media screen and (min-width:600px) {
+
+
+.button--book {
+	background-color: silver;
+}
+
+
+.button--book::after {
+	content: attr(data-text);
+	padding:0 46px;
+	color: red;
+}
+
+}

@@ -1,0 +1,26 @@
+:root {
+
+/*start color variables*/
+
+--moderatecyan: hsl(176, 50%, 47%);
+--darkcyan: hsl(176, 72%, 28%);
+--black: hsl(0, 0%, 0%);
+--darkgray: hsl(0, 0%, 48%);
+--lightgray: hsl(0, 0%, 90%);
+--white:#fff;
+
+/*end color variables*/
+
+/*start font variables*/
+
+	--fs: 1rem;
+	--ff: 'Commissioner', sans-serif;
+	--fw-s: 400;
+	--fw-m: 500;
+	--fw-l: 700;
+
+/*end font variables*/
+
+--container-size:24px;
+
+}

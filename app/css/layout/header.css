@@ -1,0 +1,90 @@
+@import "../states/hamburger.css";
+
+.hero {
+	position: relative;
+	max-width: 100%;
+	min-height: 300px;
+	background:url('../../../images/image-hero-mobile.jpg') no-repeat center / cover;
+}
+
+.hero__nav {
+	padding: 32px 0;
+}
+
+.hero__logo {
+	max-width: 129px;
+	max-height: 24px;
+}
+
+.hero__hamburger {
+	min-width: 16px;
+	min-height: 15px;
+	background:url('../../../images/icon-hamburger.svg') no-repeat center / cover;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.hero__links {
+	align-items: flex-start;
+	background-color: var(--lightgray);
+	border-radius: 5px;
+	display: none;
+	flex-direction: column;
+	gap:1px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+	transform:translate(var(--container-size),-100%);
+	width: calc(100% - (var(--container-size) * 2));
+	z-index: 2;
+}
+
+.hero__links-item {
+	background-color: var(--white);
+	align-self: stretch;
+	padding:25px 24px;
+}
+
+@media screen and (min-width: 600px) {
+	.hero {
+		max-width: 100%;
+		min-height: 400px;
+		background:url('../../../images/image-hero-desktop.jpg') no-repeat center / cover;
+	}
+
+	.hero__nav {
+		padding: 48px 0;
+	}
+
+	.hero__hamburger {
+		display: none;
+	}
+
+	.hero__links {
+		display: flex;
+		gap:33px;
+
+		align-items: center;
+		background-color: transparent;
+		border-radius: 0;
+		flex-direction: row;
+		position: static;
+		transform:translate(0,0);
+		width: auto;
+	}
+
+	.hero__links-item {
+		background-color: transparent;
+		align-self: stretch;
+		padding:0 0;
+	}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.isActive .hero__hamburger{
+	background-image: url('../../../images/icon-close-menu.svg');
+}
+
+.isActive .overlay {
+	display: block;
+}
+
+.isActive .hero__links {
+	display: flex;
+}
+
+@media screen and (min-width: 600px) {
+	.isActive .overlay {
+		display: none;
+	}
+}

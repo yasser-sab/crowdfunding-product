@@ -1,0 +1,59 @@
+/*start helper classes goes here*/
+
+.flex {
+	display: flex;
+}
+
+.fd {
+	flex-direction: column;
+}
+
+.fw-w {
+	flex-wrap: wrap;
+}
+
+.jc-sb {
+	justify-content: space-between;
+}
+
+.as-fs {
+	align-self: flex-start;
+}
+
+.as-fe {
+	align-self: flex-end;
+}
+
+.jc-c {
+	justify-content: center;
+}
+
+.ai-c {
+	align-items: center;
+}
+
+.ai-fs {
+	align-items: flex-start;
+}
+
+.ta-c {
+	text-align: center;
+}
+
+.container {
+	width: calc(100% - (var(--container-size) * 2));
+	margin: 0 auto;
+}
+
+.overlay {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+	z-index: 1;
+}
+
+/*end helper classes goes here*/

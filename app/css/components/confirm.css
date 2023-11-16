@@ -1,0 +1,25 @@
+.confirm {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: calc(100% - calc(var(--container-size) * 2));
+  background-color: white;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 2;
+  transform: translate(-50%,-50%);
+}
+
+.confirm__icon {
+  width: 90px;
+  height: 90px;
+  background:url('../../../images/icon-check.svg') no-repeat center / cover;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 600px) {
+  .confirm {
+    width: 540px;
+  }
+}

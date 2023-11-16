@@ -1,0 +1,85 @@
+.box {
+	position: relative;
+	border-radius: 5px;
+	padding: 40px 23px;
+	background-color: white;
+}
+
+.box:not(:last-child) {
+	margin-bottom: 26px;
+}
+
+.box__logo {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 56px;
+	height: 56px;
+	background:url('../../../images/logo-mastercraft.svg') no-repeat center / cover;
+	border-radius: 50%;
+	transform:translate(-50%,-50%);
+}
+
+.box__details {
+	gap:1px;
+	background: repeating-linear-gradient(
+	  90deg,
+	  white 0%,
+	  white 37%,
+	  silver 38%,
+	  silver 63%,
+	  white 64%,
+	  white 100%
+	);
+}
+
+.box__info {
+	position: relative;
+	padding: 30px 0;
+	background-color: white;
+	align-self: stretch;
+	justify-content: center;
+}
+
+.box__info:first-child {
+	padding-top: 0;
+}
+
+.box__slide {
+  	width: 100%;
+	height: 12px;
+	background-color: silver;
+	position: relative;
+	border-radius: 50px;
+  }
+
+	.box__slide::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 80%;
+		height: 100%;
+		background-color: cyan;
+		border-radius: 50px;
+	}
+
+@media screen and (min-width:600px) {
+  .box__details {
+    flex-direction: row;
+    gap:1px;
+    margin-bottom: 36px;
+    background: silver;
+    /*align-items: c;*/
+    /*justify-content: */
+  }
+
+  .box__info {
+  	/*padding-right: 43px;*/
+    padding:0 30px;
+    flex-basis: 33.33%;
+    background-color: white;
+  }
+
+  
+}

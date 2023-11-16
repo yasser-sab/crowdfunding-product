@@ -1,0 +1,19 @@
+@import "../controls/button.css";
+@import "../controls/radio.css";
+@import "../components/box.css";
+@import "../components/offers.css";
+@import "../components/confirm.css";
+
+.main {
+	margin-top: -90px;
+}
+
+@media screen and (min-width: 600px) {
+	:root {
+		--container-size:165px;
+	}
+	.main {
+		/*width: calc(100% - calc(var(--container-size) * 2));*/
+		margin: 0 auto;
+	}
+}

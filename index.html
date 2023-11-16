@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Crowdfunding product page</title>
+
+  <link rel="stylesheet" type="text/css" href="app/css/style.css">
+
+ <!--  <style type="text/css">
+    p {
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .b1 {
+      background-color: white;
+      border-radius: 5px;
+      border:solid 1px silver;
+      padding:20px;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .b1c1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap:11px;
+    }
+
+    .b1c1e1 {
+    }
+
+    .b1c1e2 {
+      color: blue;
+    }
+
+    /**/
+
+    .b1c2 {
+      margin:32px 0;
+    }
+
+    .b1c3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap:28px;
+    }
+
+    .b1c3e1 {
+      display: flex;
+      align-items: center;
+      gap:5px;
+    }
+
+    .b1c3c1 {
+
+    }
+
+    .b1c3e2 {
+    }
+
+    @media screen and (min-width:600px) {
+      .b1 {
+        background-color: red;
+        border-radius: 5px;
+        border:solid 1px silver;
+        padding:20px;
+      }
+
+      .b1c1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .b1c1e1 {
+
+      }
+
+      .b1c1e2 {
+      }
+
+      /**/
+
+      .b1c2 {
+
+      }
+
+      .b1c3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .b1c3e1 {
+        display: flex;
+        align-items: center;
+        gap:5px;
+      }
+
+      .b1c3c1 {
+
+      }
+
+      .b1c3e2 {
+      }
+    }
+  </style> -->
+
+
+  <style type="text/css">
+    h2 {
+      margin:0;
+    }
+    p{
+      margin:0;
+    }
+    .b2 {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: white;
+      border:solid 1px silver;
+      border-radius: 10px;
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .b2c1 {
+      display: flex;
+      align-items: center;
+    }
+    .b2c1e1 {
+
+    }
+    .b2c1c1 {
+      display: flex;
+      flex-direction: column;
+    }
+    .b2c1c1e1 {
+
+    }
+    .b2c1c1e2 {
+
+    }
+    .b2c1c2 {
+      display: flex;
+      flex-direction: column;
+    }
+    .b2c1c2e1 {
+
+    }
+    .b2c1c2c1 {
+      
+    }
+    .b2c1c2c1e1 {
+
+    }
+
+
+
+
+
+
+    .b2c2 {
+      border-top:solid 1px silver;
+      padding: 22px;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      gap:20px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .b2c2e1 {
+
+    }
+    .b2c2c1 {
+      display: flex;
+      gap:10px;
+    }
+
+    .b2c2c1e1 {
+      border-radius: 50px;
+      box-sizing: border-box;
+      width: 100px;
+      padding:0 25px;
+      margin: 0;
+      border: solid 1px silver;
+      outline:none;
+    }
+
+    @media screen and (min-width:600px) {
+      .b2 {
+        position: relative;
+      }
+
+      .b2c2 {
+        border-top:solid 1px silver;
+        padding: 22px;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap:20px;
+        
+      }
+      .b2c2e1 {
+
+      }
+      .b2c2c1 {
+        display: flex;
+        gap:10px;
+      }
+
+      .b2c1c2c1 {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+
+      .b2c2c1e1 {
+        border-radius: 50px;
+        box-sizing: border-box;
+        width: 100px;
+        padding:0 25px;
+        margin: 0;
+        border: solid 1px silver;
+        outline:none;
+      }
+    }
+  </style>
+</head>
+<body>
+ <!--  <div class="b1">
+    <div class="b1c1">
+      <h2 class="b1c1e1">title</h2>
+      <p class="b1c1e2">price</p>
+    </div>
+    <p class="b1c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+    <div class="b1c3">
+      <p class="b1c3e1"><span class="b1c3c1">100</span>left</p>
+      <a class="button button--default b1c3e2">button</a>
+    </div>
+  </div> -->
+
+  <!-- <div class="b2">
+    <div class="b2c1">
+      <input class="b2c1e1" type="radio" name="">
+      <div class="b2c1c1">
+        <h2 class="b2c1c1e1">title</h2>
+        <p class="b2c1c1e2">Lorem ipsum dolor sit amet</p>
+      </div>
+    </div>
+    <div class="b2c1c2">
+      <p class="b2c1c2e1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+      <p class="b2c1c2c1"><span class="b2c1c2c1e1">100</span>left</p>
+    </div>
+    <div class="b2c2">
+      <p class="b2c2e1">Lorem ipsum</p>
+      <div class="b2c2c1">
+        <input class="b2c2c1e1" type="text" name="">
+        <a class="button button--default" href="#">two</a>
+      </div>
+    </div>
+  </div> -->
+<!-- other -->
+
+
+<!-- <div class="confirm">
+  <div class="confirm__icon"></div>
+  <h2>Thanks for your support!</h2>
+  <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+  an email once our campaign is completed.</p>
+  <a class="button button--default" href="#">Got it!</a>
+</div> -->
+
+<!-- <div class="box">
+  <div class="flex jc-sb ai-c">
+    <h2>Back this project</h2>
+    <img src="images/icon-close-modal.svg">
+  </div>
+  <p>Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
+
+  <div class="offers">
+    <div class="flex ai-c offers__top">
+      <input type="radio" name="">
+      <div class="flex fd">
+        <h3 class="offers__heading">Bamboo Stand</h3>
+        <p class="offers__pledge">Pledge $25 or more</p>
+      </div>
+    </div>
+    <p class="offers__text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+    you’ll be added to a special Backer member list.</p>
+    <div class="offers__bottom flex fd ai-fs">
+      <p class="flex ai-c"><span class="offers__quantity">101</span>left</p>
+      <a class="button button--default" href="#">Select Reward</a>
+    </div>
+  </div>
+</div> -->
+
+<header class="hero">
+  <nav class="hero__nav">
+    <div class="container flex jc-sb ai-c fw-w">
+      <div class="overlay"></div>
+      <img class="hero__logo " src="images/logo.svg">
+      <div class="hero__hamburger"></div>
+      <ul class="hero__links flex ai-c">
+        <li class="hero__links-item"><a href="#">About</a></li>
+        <li class="hero__links-item"><a href="#">Discover</a></li>
+        <li class="hero__links-item"><a href="#">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="box ta-c">
+      <div class="box__logo"></div>
+      <h1>Mastercraft Bamboo Monitor Riser</h1>
+      <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
+      <div class="flex jc-sb fw-w">
+        <a class="button button--default" href="#">Back this project</a>
+        <a data-text="book" class="button button--book" href="#"></a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box__details flex fd ai-c">
+        <div class="box__info flex fd ai-c">
+          <span>$89,914</span>
+          <p>of $100,000 backed</p>
+        </div>
+        <div class="box__info flex fd ai-c">
+          <span>5,007</span>
+          <p>total backers</p>
+        </div>
+        <div class="box__info flex fd ai-c">
+          <span>56</span>
+          <p>days left</p>
+        </div>
+      </div>
+      <div class="box__slide"></div>
+    </div>
+    <div class="box">
+      <h2>About this project</h2>
+      <p>The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+      to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+      your posture and make you more comfortable while at work, helping you stay focused on the task at hand.</p>
+      <p>Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+      to allow notepads, pens, and USB </p>
+      <div class="offers">
+        <div class="flex fd offers__top">
+          <h3 class="offers__heading">Bamboo Stand</h3>
+          <p class="offers__pledge">Pledge $25 or more</p>
+        </div>
+        <p class="offers__text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+        you’ll be added to a special Backer member list.</p>
+        <div class="offers__bottom flex fd ai-fs">
+          <p class="flex ai-c"><span class="offers__quantity">101</span>left</p>
+          <a class="button button--default" href="#">Select Reward</a>
+        </div>
+      </div>
+      <div class="offers">
+        <div class="flex fd offers__top">
+          <h3 class="offers__heading">Black Edition Stand</h3>
+          <p class="offers__pledge">Pledge $75 or more</p>
+        </div>
+        <p class="offers__text">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+        member list. Shipping is included.</p>
+        <div class="offers__bottom flex fd ai-fs">
+          <p class="flex ai-c"><span class="offers__quantity">64</span>left</p>
+          <a class="button button--default" href="#">Select Reward</a>
+        </div>
+      </div>
+      <div class="offers">
+        <div class="flex fd offers__top">
+          <h3 class="offers__heading">Mahogany Special Edition</h3>
+          <p class="offers__pledge">Pledge $200 or more</p>
+        </div>
+        <p class="offers__text">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+        to our Backer member list. Shipping is included.</p>
+        <div class="offers__bottom flex fd ai-fs">
+          <p class="flex ai-c"><span class="offers__quantity">0</span>left</p>
+          <a class="button button--default" href="#">Out of Stock</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script type="text/javascript" src="app/js/script.js"></script>
+</body>
+</html>
